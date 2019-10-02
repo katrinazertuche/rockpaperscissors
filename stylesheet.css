@@ -1,0 +1,47 @@
+h1,h2,h3 {
+    text-align: center
+}
+img {
+    display: block;
+    margin: 50px auto;
+    width: 400px;
+}
+.rotation {
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+form {
+    width: 400px;
+    margin: auto;
+}
+
+#game {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0
+}
+
+h2 {
+    margin-bottom: 0
+}
+
+button {
+    margin: 15px 0
+}
+p {
+    text-align: right
+}
+
+button.disabled {
+    cursor: not-allowed !important;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
